@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('BUILD') {
+            steps {
+                echo 'Mphase de dev'
+                echo 'from gitHub'
+            }
+        }
+        stage('TEST') {
+            steps {
+                echo 'testing'
+                echo 'from gitHub'
+            }
+        }
+        stage('deployment') {
+            steps {
+                echo 'Mise en production'
+                echo 'from gitHub'
+            }
+        }
+    }
+}
